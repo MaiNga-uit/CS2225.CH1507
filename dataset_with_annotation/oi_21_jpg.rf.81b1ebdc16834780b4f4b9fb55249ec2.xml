@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>oi_21_jpg.rf.81b1ebdc16834780b4f4b9fb55249ec2.jpg</filename>
+	<path>oi_21_jpg.rf.81b1ebdc16834780b4f4b9fb55249ec2.jpg</path>
+	<source>
+		<database>roboflow.ai</database>
+	</source>
+	<size>
+		<width>1536</width>
+		<height>2048</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>oi</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>408</xmin>
+			<xmax>1043</xmax>
+			<ymin>837</ymin>
+			<ymax>1561</ymax>
+		</bndbox>
+	</object>
+</annotation>
