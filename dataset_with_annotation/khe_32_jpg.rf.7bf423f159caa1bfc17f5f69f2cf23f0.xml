@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>khe_32_jpg.rf.7bf423f159caa1bfc17f5f69f2cf23f0.jpg</filename>
+	<path>khe_32_jpg.rf.7bf423f159caa1bfc17f5f69f2cf23f0.jpg</path>
+	<source>
+		<database>roboflow.ai</database>
+	</source>
+	<size>
+		<width>82</width>
+		<height>119</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>khe</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>6</xmin>
+			<xmax>82</xmax>
+			<ymin>3</ymin>
+			<ymax>119</ymax>
+		</bndbox>
+	</object>
+</annotation>
