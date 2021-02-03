@@ -14,11 +14,13 @@
 
 * ảnh chỉ chứa 1 loại trái cây trong 6 loại sau đây: **`thanh long, măng cụt, mận, ổi, xoài, khế`**.
 
-3. Công cụ: python, google colab
+3. Công cụ và thư viện: Colab, python 3.x, Tensorflow version 2, Object Detection Api 
 
 ## Các bản cập nhật
 
-## Nội dung
+**`2021-02-01`**: Cập nhật dataset, tăng thêm độ đa dạng của các ảnh chụp. 
+
+**`2020-12-14`**: Hệ thống dùng dataset gồm các ảnh chụp đơn của từng loại trái cây.
 
 ## Nhận dạng trái cây
 
