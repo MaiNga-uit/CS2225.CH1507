@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>xoai_69_jpg.rf.80caba79ef296b35c512c6d5ac127f85.jpg</filename>
+	<path>xoai_69_jpg.rf.80caba79ef296b35c512c6d5ac127f85.jpg</path>
+	<source>
+		<database>roboflow.ai</database>
+	</source>
+	<size>
+		<width>107</width>
+		<height>145</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>xoai</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>5</xmin>
+			<xmax>106</xmax>
+			<ymin>4</ymin>
+			<ymax>142</ymax>
+		</bndbox>
+	</object>
+</annotation>

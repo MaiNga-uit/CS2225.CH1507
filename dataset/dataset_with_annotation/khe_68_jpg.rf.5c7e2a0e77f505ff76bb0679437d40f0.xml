@@ -1,0 +1,14 @@
+<annotation>
+	<folder></folder>
+	<filename>khe_68_jpg.rf.5c7e2a0e77f505ff76bb0679437d40f0.jpg</filename>
+	<path>khe_68_jpg.rf.5c7e2a0e77f505ff76bb0679437d40f0.jpg</path>
+	<source>
+		<database>roboflow.ai</database>
+	</source>
+	<size>
+		<width>116</width>
+		<height>130</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+</annotation>

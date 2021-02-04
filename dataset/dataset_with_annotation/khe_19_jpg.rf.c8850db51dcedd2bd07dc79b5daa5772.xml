@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>khe_19_jpg.rf.c8850db51dcedd2bd07dc79b5daa5772.jpg</filename>
+	<path>khe_19_jpg.rf.c8850db51dcedd2bd07dc79b5daa5772.jpg</path>
+	<source>
+		<database>roboflow.ai</database>
+	</source>
+	<size>
+		<width>99</width>
+		<height>179</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>khe</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>5</xmin>
+			<xmax>95</xmax>
+			<ymin>5</ymin>
+			<ymax>179</ymax>
+		</bndbox>
+	</object>
+</annotation>

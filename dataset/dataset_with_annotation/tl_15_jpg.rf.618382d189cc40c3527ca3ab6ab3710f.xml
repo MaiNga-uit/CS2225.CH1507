@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>tl_15_jpg.rf.618382d189cc40c3527ca3ab6ab3710f.jpg</filename>
+	<path>tl_15_jpg.rf.618382d189cc40c3527ca3ab6ab3710f.jpg</path>
+	<source>
+		<database>roboflow.ai</database>
+	</source>
+	<size>
+		<width>416</width>
+		<height>416</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>thanhlong</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>16</xmin>
+			<xmax>389</xmax>
+			<ymin>139</ymin>
+			<ymax>304</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>mc_36_jpg.rf.a6866fd40b9f6c92a8bb4656939fec35.jpg</filename>
+	<path>mc_36_jpg.rf.a6866fd40b9f6c92a8bb4656939fec35.jpg</path>
+	<source>
+		<database>roboflow.ai</database>
+	</source>
+	<size>
+		<width>416</width>
+		<height>416</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>mangcut</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>34</xmin>
+			<xmax>289</xmax>
+			<ymin>28</ymin>
+			<ymax>317</ymax>
+		</bndbox>
+	</object>
+</annotation>
