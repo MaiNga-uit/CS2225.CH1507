@@ -1,7 +1,9 @@
 # CS2225.CH1507 - Nhóm 7 - Nhận dạng trái cây
 
 [CH2001010	Mai Phương Nga](mailto:ngamp.15@gm.uit.edu.vn?subject=[GitHub]%CS2225.CH1507%Nhan%dang%trai%cay)
+
 [CH2001015	Nguyễn Như Thanh](mailto:thanhnn.15@gm.uit.edu.vn?subject=[GitHub]%CS2225.CH1507%Nhan%dang%trai%cay)  
+
 [CH2001001	Trần Hiếu Đại](mailto:daith.15@gm.uit.edu.vn?subject=[GitHub]%CS2225.CH1507%Nhan%dang%trai%cay)
 
 ## Giới thiệu
