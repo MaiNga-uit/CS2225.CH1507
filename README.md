@@ -1,8 +1,8 @@
 # CS2225.CH1507 - Nhóm 7 - Nhận dạng trái cây
 
-[CH2001010	Mai Phương Nga](mailto:ngamp.15@gm.uit.edu.vn)  
-[CH2001015	Nguyễn Như Thanh]()  
-[CH2001001	Trần Hiếu Đại]()
+[CH2001010	Mai Phương Nga](mailto:ngamp.15@gm.uit.edu.vn?subject=[GitHub]%CS2225.CH1507%Nhan%dang%trai%cay)
+[CH2001015	Nguyễn Như Thanh](mailto:thanhnn.15@gm.uit.edu.vn?subject=[GitHub]%CS2225.CH1507%Nhan%dang%trai%cay)  
+[CH2001001	Trần Hiếu Đại](mailto:daith.15@gm.uit.edu.vn?subject=[GitHub]%CS2225.CH1507%Nhan%dang%trai%cay)
 
 ## Giới thiệu
 
@@ -29,7 +29,7 @@ Trong đó:
 
 **`2021-02-01`**: Cập nhật dataset, tăng thêm độ đa dạng của các ảnh chụp. 
 
-**`2020-12-14`**: Hệ thống dùng dataset gồm các ảnh chụp đơn của từng loại trái cây.
+**`2020-12-14`**: [Hệ thống](https://github.com/MaiNga-uit/CS2225.CH1507/tree/master/vers/240x240_noise_bright) dùng dataset gồm các ảnh chụp đơn giản của từng loại trái cây. 
 
 ## Nhận dạng trái cây
 
