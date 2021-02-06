@@ -10,11 +10,20 @@
 
 2. Mô tả đề tài: Xây dựng một hệ thống giúp nhận dạng trái cây của VN dựa trên ảnh chụp.
 
- ![VN_Fruit_Demo](https://github.com/MaiNga-uit/CS2225.CH1507/blob/master/resources/System.2.jpg)
+<p align="center">
+ <img src="https://github.com/MaiNga-uit/CS2225.CH1507/blob/master/resources/System.2.jpg" width="75%" height="75%">
+</p>
 
-* ảnh chỉ chứa 1 loại trái cây trong 6 loại sau đây: **`thanh long, măng cụt, mận, ổi, xoài, khế`**.
+Trong đó:
+* Input là 1 ảnh chỉ chứa 1 hoặc nhiều trái cây trong 6 loại sau đây: **`thanh long, măng cụt, mận, ổi, xoài, khế`**
+* Hệ thống Nhận dạng trái cây sẽ xử lý và detect trái cây có trên ảnh chụp được đưa vào
+* Output là bounding box cho từng vùng có trái cây và thông tin loại trái cây tương ứng mà hệ thống detect được
 
 3. Công cụ và thư viện: Colab, python 3.x, Tensorflow version 2, Object Detection Api 
+
+## Video Demo
+
+[![Demo](https://github.com/MaiNga-uit/CS2225.CH1507/blob/master/resources/Intro.jpg)](https://www.youtube.com/watch?v=-EFBziDZqM8)
 
 ## Các bản cập nhật
 
