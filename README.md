@@ -50,7 +50,7 @@ Sơ lược về bài toán Object detection
 * Input: Hình ảnh
 * Ouput: Dự đoán vị trí (thể hiện qua bounding box) và tên object.
 
-Lịch sử phát triển: 
+Lịch sử phát triển: Machine learning truyền thống và Deep learning
 
 1. Machine learning – base
 
@@ -62,32 +62,23 @@ Mô hình machine learning:
  <img src="https://github.com/MaiNga-uit/CS2225.CH1507/blob/master/resources/MLPhase.jpg" width="60%" height="60%">
 </p>
 
+Việc học theo mô hình machine learning truyền thống đã phát triển trong một thời gian dài và xây dựng nền tảng để giải quyết bài toán object detection cũng như những bài toán khác như classification, localization. Tuy nhiên, việc extract feature tương đối phức tạp, và đòi hỏi 1 số kiến thức chuyên sâu, và chi phí tính toán tương đối cao
+
 2. Deep learning
 
-Two stages method: R-CNN, Fast-CNN
-
 <p align="center">
- <img src="https://github.com/MaiNga-uit/CS2225.CH1507/blob/master/resources/DeepTwoStage.jpg" width="60%" height="60%">
+ <img src="https://github.com/MaiNga-uit/CS2225.CH1507/blob/master/resources/Deep.jpg" width="60%" height="60%">
 </p>
 
-* Trích xuất region proposal (thay vì sliding window trong machine learning base)
-* 	Phân loại từng trên từng region proposal dựa trên features  output kết quả dự đoán.
-*	Ví dụ mô hình R-CNN:
+Deep learning dựa trên cấu trúc mạng nơ-ron (tương tự như não người). Mạng nơ-ron sẽ làm nhiệm vụ học trực tiếp từ dữ liệu input đầu vào feature extraction, learning classification,...) để cho ra output. 
 
-<p align="center">
- <img src="https://github.com/MaiNga-uit/CS2225.CH1507/blob/master/resources/RCNN.jpg" width="60%" height="60%">
-</p>
+Như vậy, thay vì extract feature là 1 task riêng biệt như trong machine learning truyền thống, thì trong deep learning, mạng nơ-ron sẽ làm nhiệm vụ học trực tiếp từ dữ liệu đầu vào (feature extraction, learning classification)
 
-Phương pháp này có khuyết điểm là chi phí tính toán cao vì phải trích xuất ra những region proposal và tính toán rút trích features trên từng region để có kết quả dự đoán  không đáp ứng được nhu cầu detect realtime
+Một số mô hình đang phát triển hiện nay: SSD, YOLO, EfficientDet. Nhóm chúng tôi chọn mô hình EfficcientDet (D0) được hỗ trợ trong Tensorflow (version 2) để giải quyết bài toán “Nhận dạng trái cây” bởi vì:
+* Tensorflow là 1 library được Google phát triển, có nhiều tutorial và source code, hỗ trợ nhiều công cụ giúp thời gian cài đặt nhanh.
+* EfficientDet D0 là một mô hình nhỏ, có thời gian training nhanh phù hợp với mục địch khởi đầu về nghiên cứu bài toán nhận dạng
 
-Single stage: 
-
-*	Trích xuất các feature map từ mạng CNN
-*	Áp dụng convolutional filters (hoặc kernel filters) để phát hiện vật thể trên các feature map có độ phân giải (revolution) khác nhau.
-
-<p align="center">
- <img src="https://github.com/MaiNga-uit/CS2225.CH1507/blob/master/resources/SingleStage.jpg" width="60%" height="60%">
-</p>
+Hướng phát triển: nhóm chúng tôi sẽ cài đặt thử nghiệm nhiều mô hình khác nhau như YOLO, để so sánh và đánh giá.
 
 ### Training data
 
