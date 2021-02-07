@@ -45,6 +45,41 @@ Click vào hình dưới để xem
 
 ### Giới thiệu
 
+Sơ lược về bài toán Object detection
+
+* Input: Hình ảnh
+* Ouput: Dự đoán vị trí (thể hiện qua bounding box) và tên object.
+
+Lịch sử phát triển: Machine learning truyền thống và Deep learning
+
+1. Machine learning – base
+
+Sử dụng sliding window classifier để trượt trên từng vùng của hình ảnh input từ đó rút trích features để tính toán phân loại. Dựa vào kết quả tính toán để output ra tên object và vị trí object (dựa vào sliding window)
+
+Mô hình machine learning: 
+
+<p align="center">
+ <img src="https://github.com/MaiNga-uit/CS2225.CH1507/blob/master/resources/MLPhase.jpg" width="60%" height="60%">
+</p>
+
+Việc học theo mô hình machine learning truyền thống đã phát triển trong một thời gian dài và xây dựng nền tảng để giải quyết bài toán object detection cũng như những bài toán khác như classification, localization. Tuy nhiên, việc extract feature tương đối phức tạp, và đòi hỏi 1 số kiến thức chuyên sâu, và chi phí tính toán tương đối cao
+
+2. Deep learning
+
+<p align="center">
+ <img src="https://github.com/MaiNga-uit/CS2225.CH1507/blob/master/resources/Deep.jpg" width="60%" height="60%">
+</p>
+
+Deep learning dựa trên cấu trúc mạng nơ-ron (tương tự như não người). Mạng nơ-ron sẽ làm nhiệm vụ học trực tiếp từ dữ liệu input đầu vào feature extraction, learning classification,...) để cho ra output. 
+
+Như vậy, thay vì extract feature là 1 task riêng biệt như trong machine learning truyền thống, thì trong deep learning, mạng nơ-ron sẽ làm nhiệm vụ học trực tiếp từ dữ liệu đầu vào (feature extraction, learning classification)
+
+Một số mô hình đang phát triển hiện nay: SSD, YOLO, EfficientDet. Nhóm chúng tôi chọn mô hình EfficcientDet (D0) được hỗ trợ trong Tensorflow (version 2) để giải quyết bài toán “Nhận dạng trái cây” bởi vì:
+* Tensorflow là 1 library được Google phát triển, có nhiều tutorial và source code, hỗ trợ nhiều công cụ giúp thời gian cài đặt nhanh.
+* EfficientDet D0 là một mô hình nhỏ, có thời gian training nhanh phù hợp với mục địch khởi đầu về nghiên cứu bài toán nhận dạng
+
+Hướng phát triển: nhóm chúng tôi sẽ cài đặt thử nghiệm nhiều mô hình khác nhau như YOLO, để so sánh và đánh giá.
+
 ### Training data
 
 Training data được nhóm thu thập qua ảnh chụp trực tiếp từ điện thoại và nguồn ảnh trên Internet. Quá trình gán nhãn được thực hiện thủ công. Tập ảnh đã được upload lên [Roboflow](https://app.roboflow.com/ds/6kyOg1KHvY?key=9NoENEKLqj) để tiện xử lý. 
@@ -186,6 +221,8 @@ Cũng dựa vào việc thực hiện với tập ảnh validation ở trên, co
 Cần cải thiện hệ thống bằng cách bổ sung thêm dữ liệu đầu vào từ nhiều nguồn khác, ảnh chụp cần đa dạng bối cảnh, bổ sung thêm ảnh chụp có chứa nhiều loại trái cây trong cùng một tấm hình.
 
 Đánh giá với nhiều model và phương pháp khác đang hiện có.
+
+Nhận dạng thời gian thực (real-time detection).
 
 Xử lý thêm dữ liệu đầu vào là video.
 
