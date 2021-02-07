@@ -45,6 +45,50 @@ Click vào hình dưới để xem
 
 ### Giới thiệu
 
+Sơ lược về bài toán Object detection
+
+* Input: Hình ảnh
+* Ouput: Dự đoán vị trí (thể hiện qua bounding box) và tên object.
+
+Lịch sử phát triển: 
+
+1. Machine learning – base
+
+Sử dụng sliding window classifier để trượt trên từng vùng của hình ảnh input từ đó rút trích features để tính toán phân loại. Dựa vào kết quả tính toán để output ra object và vị trí object (dựa vào sliding window)
+
+Mô hình machine learning: 
+
+<p align="center">
+ <img src="https://github.com/MaiNga-uit/CS2225.CH1507/blob/master/resources/MLPhase.jpg" width="60%" height="60%">
+</p>
+
+2. Deep learning
+
+Two stages method: R-CNN, Fast-CNN
+
+<p align="center">
+ <img src="https://github.com/MaiNga-uit/CS2225.CH1507/blob/master/resources/DeepTwoStage.jpg" width="60%" height="60%">
+</p>
+
+* Trích xuất region proposal (thay vì sliding window trong machine learning base)
+* 	Phân loại từng trên từng region proposal dựa trên features  output kết quả dự đoán.
+*	Ví dụ mô hình R-CNN:
+
+<p align="center">
+ <img src="https://github.com/MaiNga-uit/CS2225.CH1507/blob/master/resources/RCNN.jpg" width="60%" height="60%">
+</p>
+
+Phương pháp này có khuyết điểm là chi phí tính toán cao vì phải trích xuất ra những region proposal và tính toán rút trích features trên từng region để có kết quả dự đoán  không đáp ứng được nhu cầu detect realtime
+
+Single stage: 
+
+*	Trích xuất các feature map từ mạng CNN
+*	Áp dụng convolutional filters (hoặc kernel filters) để phát hiện vật thể trên các feature map có độ phân giải (revolution) khác nhau.
+
+<p align="center">
+ <img src="https://github.com/MaiNga-uit/CS2225.CH1507/blob/master/resources/SingleStage.jpg" width="60%" height="60%">
+</p>
+
 ### Training data
 
 Training data được nhóm thu thập qua ảnh chụp trực tiếp từ điện thoại và nguồn ảnh trên Internet. Quá trình gán nhãn được thực hiện thủ công. Tập ảnh đã được upload lên [Roboflow](https://app.roboflow.com/ds/6kyOg1KHvY?key=9NoENEKLqj) để tiện xử lý. 
@@ -186,6 +230,8 @@ Cũng dựa vào việc thực hiện với tập ảnh validation ở trên, co
 Cần cải thiện hệ thống bằng cách bổ sung thêm dữ liệu đầu vào từ nhiều nguồn khác, ảnh chụp cần đa dạng bối cảnh, bổ sung thêm ảnh chụp có chứa nhiều loại trái cây trong cùng một tấm hình.
 
 Đánh giá với nhiều model và phương pháp khác đang hiện có.
+
+Nhận dạng thời gian thực (real-time detection).
 
 Xử lý thêm dữ liệu đầu vào là video.
 
