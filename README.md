@@ -49,8 +49,8 @@ Training data được nhóm thu thập qua ảnh chụp trực tiếp từ đi�
 
 [Dataset](https://github.com/MaiNga-uit/CS2225.CH1507) bao gồm:
 
-* Tập train: 1566 hình được generate dựa trên 512 hình (80% dataset) kèm thêm các bước tiền xử lý và gia tẳng bộ ảnh, bao gồm: resize - 416x416 (fit white background); rotation: -45 độ và +45 độ; shear: +-15 Horizontal, +-15 Vertical; brightness: +-20%; blur: up to 5px; noise: up to 5%
-* Tập test: 130 hình (20%)
+* Tập train: 1566 hình được generate dựa trên 512 hình (80% dataset) kèm thêm các bước tiền xử lý và gia tăng bộ ảnh, bao gồm: resize - 416x416 (fit white background); rotation: -45 độ và +45 độ; shear: +-15 Horizontal, +-15 Vertical; brightness: +-20%; blur: up to 5px; noise: up to 5%
+* Tập test: 130 hình (20% dataset)
 
 ### Train
 
@@ -138,3 +138,25 @@ Kết quả đánh giá dựa trên Mean Average Precision và Average Recall
 
 <img src="https://github.com/MaiNga-uit/CS2225.CH1507/blob/master/resources/evaluation/Eval.AR.jpg">
 
+Kết quả dựa theo các độ đo trên cho thấy tập dataset được resize về 226x226 kèm các augmentation cho kết quả khả quan nhất. Tuy nhiên trên thực tế, khi nhóm thực hiện kiểm thử với một bộ ảnh validation hoàn toàn độc lập với dataset ban đầu thì configuration trên hoàn toàn không detect được nhãn 'khe', kết quả dự đoán cho ra rất nhiều nhãn 'thanhlong'.
+
+Cũng dựa vào việc thực hiện với tập ảnh validation ở trên, configuration resize 416x416 kèm các augmentation rotate, shear cho ra kết quả khả quan hơn.
+
+### Hướng phát triển
+
+Cần cải thiện hệ thống bằng cách bổ sung thêm dữ liệu đầu vào từ nhiều nguồn khác, ảnh chụp cần đa dạng bối cảnh, bổ sung thêm ảnh chụp có chứa nhiều loại trái cây trong cùng một tấm hình.
+
+Đánh giá với nhiều model và phương pháp khác đang hiện có.
+
+Xử lý thêm dữ liệu đầu vào là video.
+
+### Các nguồn tham khảo
+
+https://blog.roboflow.com/breaking-down-efficientdet
+
+https://blog.tensorflow.org/2020/07/tensorflow-2-meets-object-detection-api
+
+https://blog.roboflow.com/train-a-tensorflow2-object-detection-model/
+
+
+Thanks for watching!
