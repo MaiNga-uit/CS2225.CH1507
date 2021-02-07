@@ -54,7 +54,7 @@ Lịch sử phát triển:
 
 1. Machine learning – base
 
-Sử dụng sliding window classifier để trượt trên từng vùng của hình ảnh input từ đó rút trích features để tính toán phân loại. Dựa vào kết quả tính toán để output ra object và vị trí object (dựa vào sliding window)
+Sử dụng sliding window classifier để trượt trên từng vùng của hình ảnh input từ đó rút trích features để tính toán phân loại. Dựa vào kết quả tính toán để output ra tên object và vị trí object (dựa vào sliding window)
 
 Mô hình machine learning: 
 
