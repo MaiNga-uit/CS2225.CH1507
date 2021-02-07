@@ -25,6 +25,8 @@ Trong đó:
 
 ## Video Demo
 
+Click vào hình dưới để xem
+
 [![Demo](https://github.com/MaiNga-uit/CS2225.CH1507/blob/master/resources/Intro.jpg)](https://youtu.be/hhwftzrl_CQ)
 
 ## Các bản cập nhật
