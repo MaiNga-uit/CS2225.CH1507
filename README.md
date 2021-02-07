@@ -56,7 +56,7 @@ Training data được nhóm thu thập qua ảnh chụp trực tiếp từ đi�
 
 ### Train
 
-Các thông tin sau đây mô tả một cách khái quát các bước cần thực hiện để training. Chi tiết có thể tham khảo tại [Notebook](https://github.com/MaiNga-uit/CS2225.CH1507/blob/master/source_code/%5BCS2225_CH1501%5D6_fruits_object_detection.ipynb)
+Các thông tin sau đây mô tả một cách khái quát các bước cần thực hiện để training. Chi tiết có thể tham khảo tại [Notebook for training](https://github.com/MaiNga-uit/CS2225.CH1507/blob/master/source_code/%5BCS2225_CH1501%5D6_fruits_object_detection.ipynb)
 
 Bước 1. Clone the tensorflow models repository từ github về
 
@@ -131,6 +131,43 @@ viz_utils.visualize_boxes_and_labels_on_image_array(
 ```
 
 <img src="https://github.com/MaiNga-uit/CS2225.CH1507/blob/master/resources/testing.png">
+
+### Test
+
+Do quá trình train từ đầu tốn khá nhiều thời gian nên nhóm đã export trước kết quả train. Kết quả này dùng làm input cho Notebook dùng riêng cho việc thử nghiệm. Notebook hỗ trợ test trên một hoặc nhiều ảnh được tải lên, hoặc dựa vào ảnh chụp từ webcam. 
+
+Sau đây là mô tả khái quát về các bước cần thực hiện để testing. Chi tiết có thể tham khảo tại [Notebook for testing](https://github.com/MaiNga-uit/CS2225.CH1507/blob/master/source_code/%5BCS2225%5DTesting_6_fruits_detection_model_with_multiple_images.ipynb)
+
+Bước 1. Download model đã được nhóm train sẵn và upload lên goodle drive
+
+```
+import gdown
+
+modelUrl = 'https://drive.google.com/uc?id=12vMCYOzWS9BmZ_iwuGT-8HPKB98glvuS' #URL cố định dùng để download.
+output = '/content/trained_model.zip' 
+gdown.download(modelUrl, output, quiet=False)
+
+!unzip -o '/content/trained_model.zip' -d '/content/'
+!rm -r '/content/trained_model.zip'
+```
+
+Bước 2. Cài đặt Object detection API
+
+Bước 3. Import thư viện và config cần thiết trước khi run test
+
+Bước 4. Cách test 1: test bằng cách input 01 hình ảnh
+
+* input 1 hình ảnh, output hiển thị trực tiếp ngay phía dưới đoạn code
+
+Bước 5. Cách test 2: Lấy hình được chụp từ webcam
+
+* Webcam sẽ được bật, click 1 click để chụp hình từ webcam
+* Output: hình ảnh được chụp cùng với bounding box, label name, score
+
+Bước 6: Cách test 3: Chạy thử nghiệm trên toàn bộ tập ảnh test và lưu vào drive
+
+* Input: Folder chứa bộ ảnh cần test (kiểu *.jpg)
+* Output: Kết quả detect sẽ được ghi vào folder được chỉ định trong Drive
 
 ### Evaluation
 
