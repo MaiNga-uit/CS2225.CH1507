@@ -1,0 +1,4 @@
+1. Link to access dataset for training
+	https://app.roboflow.com/ds/yHtiRYrIZ1?key=i8qP9RzYfS
+2. Link to access output model for testing only
+	https://drive.google.com/uc?id=17F6ARN39yEebwc9l3_04JeaCrsyUV-zk
